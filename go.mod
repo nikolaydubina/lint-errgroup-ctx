@@ -1,4 +1,4 @@
-module github.com/ndx-technologies/lint-errgroup-ctx
+module github.com/nikolaydubina/lint-errgroup-ctx
 
 go 1.24.4
 
