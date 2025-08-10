@@ -4,9 +4,17 @@ Detect dangerous assignment of context by `errgroup.WithContext`[^1][^2].
 This linter will check that returned context is not `ctx`, this enforces practice either assigning context to `_` or a new name.
 
 ```go
-	g, ctx := errgroup.WithContext(context.Background()) // want "context from errgroup.WithContext should not be named 'ctx'"
-	...
-	g.Wait()
+g, ctx := errgroup.WithContext(context.Background()) // want "context from errgroup.WithContext should not be named 'ctx'"
+...
+g.Wait()
+```
+
+```bash
+go install https://github.com/nikolaydubina/lint-errgroup-ctx@latest
+```
+
+```bash
+lint-errgroup-ctx ./...
 ```
 
 [^1]: https://news.ycombinator.com/item?id=44845953
