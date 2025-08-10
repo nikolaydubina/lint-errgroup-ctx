@@ -5,8 +5,8 @@ This linter will check that returned context is **not** `ctx`, this enforces pra
 
 ```go
 	g, ctx := errgroup.WithContext(context.Background()) // want "context from errgroup.WithContext should not be named 'ctx'"
-  ...
-  g.Wait()
+	...
+	g.Wait()
 ```
 
 [^1]: https://news.ycombinator.com/item?id=44845953
