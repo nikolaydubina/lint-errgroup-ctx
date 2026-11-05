@@ -8,7 +8,7 @@ g.Wait()
 ```
 
 ```bash
-go install https://github.com/nikolaydubina/lint-errgroup-ctx@latest
+go install github.com/nikolaydubina/lint-errgroup-ctx@latest
 ```
 
 ```bash
