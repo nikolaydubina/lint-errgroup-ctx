@@ -1,5 +1,3 @@
-[![codecov](https://codecov.io/github/nikolaydubina/lint-errgroup-ctx/graph/badge.svg?token=4jwCqMiyif)](https://codecov.io/github/nikolaydubina/lint-errgroup-ctx)
-
 Detect dangerous assignment of context by `errgroup.WithContext`[^1][^2].
 This linter will check that returned context is not `ctx`, this enforces practice either assigning context to `_` or a new name.
 
